@@ -1,4 +1,4 @@
-#Write a Deaf Grandma program.
+#Deaf Grandma Script
 
 Whatever you say to grandma (whatever you type in), she should respond
 with "HUH?! SPEAK UP, SONNY!", unless you shout it (type in all
