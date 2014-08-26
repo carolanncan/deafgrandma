@@ -8,7 +8,7 @@ var yellsBack = function() {
   return "No, not since " + randomYear() + "!";
 };
 
-function deafGrandma(string) {
+var deafGrandma = function deafGrandma(string) {
   if (string.toUpperCase() !== string) {
     return speakUp;
   }
