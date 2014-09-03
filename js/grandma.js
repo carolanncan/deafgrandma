@@ -8,11 +8,20 @@ var yellsBack = function() {
   return "No, not since " + randomYear() + "!";
 };
 
+var count = i;
+
 function deafGrandma(string) {
   if (string.toUpperCase() !== string) {
     return speakUp;
   }
   return yellsBack()
 };
+
+do {
+  deafGrandma(string)
+  while (count < 3) {
+        count++;
+  }
+}
 
 module.exports = deafGrandma
