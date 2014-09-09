@@ -6,11 +6,11 @@ process.stdin.setEncoding('utf8');
 process.stdin.on('readable', function() {
   var sentence = processInput(process.stdin.read());
 
-  if (sentence === "BYE") {
-    process.stdout.write("Bye now.\n");
-    process.exit()
+  if (grandma.interface(sentence) === grandma.byeResponse) {
+    process.stdout.write(grandma.byeResponse);
+    process.exit();
   }
 
-  process.stdout.write(grandma(sentence) + "\n");
+  process.stdout.write(grandma.interface(sentence) + "\n");
 
 });
