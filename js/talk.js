@@ -8,9 +8,7 @@ process.stdin.on('readable', function() {
   var grandmaResponse = (grandma.interface(sentence) + "\n");
 
   process.stdout.write(grandmaResponse);
-
   if (grandmaResponse === grandma.byeResponse) {
     process.exit();
   }
-
 });
