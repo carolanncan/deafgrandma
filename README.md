@@ -9,3 +9,5 @@ and yells back, "NO, NOT SINCE 1938!".
 
 To make your program really believable, have grandma shout a different year each
 time; maybe any year at random between 1930 and 1950.
+
+To exit the program, you must shout "BYE" three times in a row.
