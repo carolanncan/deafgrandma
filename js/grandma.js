@@ -14,6 +14,12 @@ var byeResponse   = "Bye now.";
 var bye           = "BYE";
 var byeCount      = 0;
 
+function buttonClick() {
+  $("button").click(function()) {
+    alert("Way to go!");
+  }
+};
+
 function checkCounter(string) {
   if (string === bye)  {
     byeCount++;
