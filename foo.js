@@ -1,1 +1,0 @@
-var foo = "the value foo"

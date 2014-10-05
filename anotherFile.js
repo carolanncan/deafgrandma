@@ -1,1 +1,0 @@
-console.log("I'm looking at the global space, and the value of the variable foo is:", foo)
