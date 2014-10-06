@@ -1,35 +1,44 @@
+body {
+  background-color: white;
+}
+
+.background-change {
+  transition: background-color 1000ms linear;
+  background: rgb(69, 255, 196);
+}
+
 main {
-  width: 70%;
   margin: 0 auto;
   text-align: center;
+  width: 70%;
 }
 
 .wrap {
   margin: 8em auto;
 }
 
+input, button {
+  border-radius: 3px;
+  padding: 1em 3em;
+}
+
 input {
-  border-radius: 5px;
-  border: 2px solid rgb(83, 175, 146);
-  color: rgb(83, 175, 146);
+  border: 2px solid black;
   display: inline-block;
   font-size: 2em;
-  padding: 1em 3em;
-  text-align: center;
 }
 
 button {
-  background: rgb(83, 175, 146);
+  background: black;
   border: none;
   color: white;
   display: block;
   margin: 2em auto;
   font-size: 1em;
-  padding: 1em 3em;
 }
 
 button:active, button:hover {
-  background: black;
+  background: rgb(60, 226, 173);
 }
 
 input:focus, button:focus {

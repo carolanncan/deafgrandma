@@ -1,6 +1,3 @@
-function buttonClick() {
-  $("button").click(function()) {
-    alert("Way to go!");
-  }
-};
-
+$("#target").click(function() {
+  $("body").toggleClass("background-change");
+});
