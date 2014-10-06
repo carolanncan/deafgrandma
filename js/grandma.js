@@ -39,6 +39,3 @@ function deafGrandma(string) {
 
   return yellsBack()
 };
-
-module.exports.interface = deafGrandma
-module.exports.byeResponse = byeResponse
