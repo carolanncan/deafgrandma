@@ -9,6 +9,7 @@ function makeGrandma() {
                       };
   var saySomething  = "Say something, Sonny!";
   var speakUp       = "Huh?! Speak up, Sonny!"
+  var isDone        = false;
   var byeResponse   = "Bye now.";
   var bye           = "BYE";
   var byeCount      = 0;
@@ -25,6 +26,7 @@ function makeGrandma() {
     checkCounter(string);
 
     if (byeCount === 3) {
+      isDone = true;
       return byeResponse;
     }
 
@@ -39,7 +41,12 @@ function makeGrandma() {
     return yellsBack()
   };
 
+  function isDoneFunction() {
+    return isDone;
+  }
+
   return {
-    talk :talkFunction
+    talk: talkFunction
+    isDone: isDoneFunction
   }
 }
