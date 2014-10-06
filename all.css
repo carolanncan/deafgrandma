@@ -1,10 +1,12 @@
 body {
-  background-color: white;
+  background: rgb(69, 255, 196);
+  /* background-color: white; */
+  font-family: futura;
 }
 
 .background-change {
   transition: background-color 1000ms linear;
-  background: rgb(69, 255, 196);
+  background: gray;
 }
 
 main {
@@ -17,10 +19,11 @@ main {
   margin: 8em auto;
 }
 
-input, button {
+input, button, .grandma-responses {
   border: 2px solid black;
   border-radius: 3px;
   padding: 1em 3em;
+  font-family: futura;
 }
 
 input {
@@ -32,7 +35,7 @@ button {
   background: black;
   color: white;
   display: block;
-  margin: 2em auto;
+  margin: 3em auto;
   font-size: 1em;
 }
 
@@ -42,4 +45,8 @@ button:active, button:hover {
 
 input:focus, button:focus {
   outline: none;
+}
+
+.grandma-responses {
+  background: white;
 }
