@@ -6,12 +6,13 @@ var target = $("#target");
 target.click(function() {
   var inputString = input.val();
   input.val("").focus();
-  var returnString = deafGrandma(inputString);
+  var returnString = grandma.talk(inputString);
 
   responses.text(returnString);
 
-  if (inputString === bye && byeCount === 3) {
+  if (grandma.isDone()) {
     $("body").toggleClass("background-change");
+    grandma = makeGrandma();
   }
 });
 
