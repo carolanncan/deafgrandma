@@ -1,3 +1,4 @@
+var grandma = makeGrandma();
 var responses = $(".grandma-responses");
 var input = $("input");
 var target = $("#target");
