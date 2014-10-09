@@ -1,11 +1,8 @@
 function makeGrandma() {
   var min           = 1920;
   var max           = 1945;
-  var randomYear    = function() {
-                      return Math.round(Math.random() * (max - min) + min);
-                    };
   var yellsBack     = function() {
-                        return "No, not since " + randomYear() + "!";
+                        return "No, not since " + utils.randomYearBetween(min, max) + "!";
                       };
   var saySomething  = "Say something, Sonny!";
   var speakUp       = "Huh?! Speak up, Sonny!"
@@ -46,7 +43,7 @@ function makeGrandma() {
   }
 
   return {
-    talk: talkFunction
+    talk: talkFunction,
     isDone: isDoneFunction
   }
 }

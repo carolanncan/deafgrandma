@@ -11,7 +11,7 @@ target.click(function() {
   responses.text(returnString);
 
   if (grandma.isDone()) {
-    $("body").toggleClass("background-change");
+    $("body").addClass("background-change");
     grandma = makeGrandma();
   }
 });
