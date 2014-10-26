@@ -4,6 +4,11 @@ var input = $("input");
 var target = $("#target");
 
 target.click(function() {
+  if (grandma === null) {
+    grandma = makeGrandma();
+    $("body").removeClass("background-change");
+  }
+
   var inputString = input.val();
   input.val("").focus();
   var returnString = grandma.talk(inputString);
@@ -12,7 +17,7 @@ target.click(function() {
 
   if (grandma.isDone()) {
     $("body").addClass("background-change");
-    grandma = makeGrandma();
+    grandma = null;
   }
 });
 
